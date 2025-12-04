@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoVenture - Novo Usuário</title>
+    <link rel="stylesheet" href="cadastro.css">
+    </head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            🌿 EcoVenture
+        </div>
+        <div class="nav-menu">
+            <a href="index (1).html">Início</a>
+            <a href="pacotes.html">Pacotes</a>
+            <a href="index (1).html" class="login-btn">Login</a>
+            <a href="new.html" class="cadastro-btn">Cadastre-se</a>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <div class="cadastro-box">
+            <h1 class="titulo-cadastro">
+                <i class="fas fa-user-plus"></i> Crie sua Conta
+            </h1>
+            <form action="#" method="POST" style="width: 100%;">
+                
+                <div class="input-grupo">
+                    <label for="nome" class="input-label">Nome Completo</label>
+                    <input type="text" id="nome" class="input-field" placeholder=" " required>
+                </div>
+                
+                <div class="input-grupo">
+                    <label for="email" class="input-label">E-mail</label>
+                    <input type="email" id="email" class="input-field" placeholder=" " required>
+                </div>
+
+                <div class="input-grupo">
+                    <label for="senha" class="input-label">Senha</label>
+                    <input type="password" id="senha" class="input-field" placeholder=" " required>
+                </div>
+                
+                <div class="input-grupo">
+                    <label for="conf-senha" class="input-label">Confirme a Senha</label>
+                    <input type="password" id="conf-senha" class="input-field" placeholder=" " required>
+                </div>
+
+                <div class="input-grupo">
+                    <label for="interesse" class="input-label">Área de Interesse Principal</label>
+                    <select id="interesse" class="input-select">
+                        <option value="" disabled selected>Selecione um tema</option>
+                        <option value="trilhas">Trilhas e Montanhas</option>
+                        <option value="praia">Praia e Mergulho</option>
+                        <option value="camping">Camping e Aventura</option>
+                        <option value="luxo">Ecoturismo de Luxo</option>
+                        <option value="cultura">Viagens Culturais</option>
+                    </select>
+                </div>
+
+                <div class="radio-grupo">
+                    <span class="radio-title">Deseja receber novidades por e-mail?</span>
+                    <label class="radio-opcao">Sim
+                      <input type="radio" checked="checked" name="newsletter" value="sim">
+                      <span class="radio-checkmark"></span>
+                    </label>
+                    <label class="radio-opcao">Não
+                      <input type="radio" name="newsletter" value="nao">
+                      <span class="radio-checkmark"></span>
+                    </label>
+                </div>
+
+                <button type="submit" class="cta-button">
+                    <i class="fas fa-paper-plane"></i> Finalizar Cadastro
+                </button>
+            </form>
+            
+            <p style="margin-top: 30px; font-size: 0.9em;">
+                Já é cadastrado? <a href="login.html" style="color: var(--cor-botao-primario); font-weight: bold;">Faça Login aqui.</a>
+            </p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 EcoVenture Agência de Viagens.</p>
+    </footer>
+</body>
+</html>
